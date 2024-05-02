@@ -3,7 +3,8 @@ import FrisianFlag from "../assets/medpart_sponsor/FrisianFlag.png";
 import GDSCUnsika from "../assets/medpart_sponsor/GDSCUnsika.png";
 import CreativePartner from "../assets/medpart_sponsor/creativePartner.jpeg";
 import sukaCode from "../assets/medpart_sponsor/sukacode.png";
-import HMIT from "../assets/medpart_sponsor/HMIT_ITS.png";
+import HMIT from "../assets/medpart_sponsor/HMITITS.png";
+
 const MediaPartner = () => {
   return (
     <div className=" sm:pb-24 md:pb-8">
