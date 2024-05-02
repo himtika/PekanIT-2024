@@ -1,8 +1,8 @@
 import { IconContext } from "react-icons";
-import { BsFillCalendarCheckFill } from "react-icons/Bs";
-import { FaInstagram, FaTelegramPlane } from "react-icons/Fa";
-import { FiAlertTriangle } from "react-icons/Fi";
-import { GoLocation, GoNote } from "react-icons/Go";
+import { BsFillCalendarCheckFill } from "react-icons/bs";
+import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import { FiAlertTriangle } from "react-icons/fi";
+import { GoLocation, GoNote } from "react-icons/go";
 import bgWebinar from "../assets/bgWebinar3.jpg";
 import webinar from "../assets/medpart_sponsor/webinar.jpg";
 const Webinar = () => {
