@@ -5,8 +5,7 @@ import { IconContext } from "react-icons";
 import { BsCardChecklist } from "react-icons/bs";
 import { Link as LinkUrl, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
-import pekanItIcon from "../assets/pekanIT.png";
-import pekanItIconCopy from "../assets/PekanIT - Copy.png";
+import pekanItIcon from "../assets/PekanIT.png";
 import { auth } from "../firebase";
 import FAQ from "./FAQ";
 import Login from "./Login/Login";
@@ -66,7 +65,7 @@ export default function Header() {
               <div className=" whitespace-nowrap inline-flex items-center justify-center py-2  text-base font-medium text-white ">
                 <img
                   className="h-2 w-auto sm:h-6 mb-1"
-                  src={pekanItIconCopy}
+                  src={pekanItIcon}
                   alt=""
                 />
                 <span id="nama" className="ml-3 text-xl font-bold">

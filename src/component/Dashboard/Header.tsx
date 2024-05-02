@@ -2,7 +2,7 @@
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
-import pekanItIcon from "../../assets/pekanIT.png";
+import pekanItIcon from "../../assets/PekanIT.png";
 import cursor from "../assets/cursor.gif";
 import Login from "../Login/Login";
 import { Link as LinkUrl } from "react-router-dom";
