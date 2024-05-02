@@ -19,7 +19,7 @@ export default function Event() {
           </p>
         </div>
 
-        <div className="grid max-w-5xl md:grid-cols-3 sm:grid-cols-1 mt-12 md:gap-4 content-center justify-center">
+        <div className="grid max-w-5xl md:grid-cols-3 sm:grid-cols-1 mt-12 gap-5 content-center justify-center">
           {/* <LinkUrl to="/pekan-it/webinar"> */}
           <div
             onClick={() => {
