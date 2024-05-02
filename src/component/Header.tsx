@@ -64,9 +64,9 @@ export default function Header() {
             <div className="flex  justify-start lg:w-0 lg:flex-1">
               <div className=" whitespace-nowrap inline-flex items-center justify-center py-2  text-base font-medium text-white ">
                 <img
-                  className="h-2 w-auto sm:h-6 mb-1"
+                  className="h-10 md:h-12 w-auto sm:h-6 mb-1 ml-3 md:ml-0"
                   src={pekanItIcon}
-                  alt=""
+                  alt="logo pekan it"
                 />
                 <span id="nama" className="ml-3 text-xl font-bold">
                   Pekan IT
@@ -77,7 +77,7 @@ export default function Header() {
               {user == 1 ? (
                 <Popover.Button className="inline-flex items-center justify-center p-2 mr-3">
                   <span className="sr-only">Open menu</span>
-                  <LinkUrl to="/pekan-it/dashboard" state={email}>
+                  <LinkUrl to="/dashboard" state={email}>
                     <IconContext.Provider
                       value={{
                         size: "22px",
