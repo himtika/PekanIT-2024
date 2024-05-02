@@ -1,5 +1,5 @@
 {
-  "name": "sukacode",
+  "name": "pekan-it-2024",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -56,10 +56,5 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
     "vite-plugin-environment": "^1.1.2"
-  },
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
