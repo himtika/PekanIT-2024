@@ -14,10 +14,10 @@ ReactDOM.createRoot(rootElement).render(
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/pekan-it/" element={<App />} />
-          <Route path="/pekan-it/dashboard" element={<Dashboard />} />
-          <Route path="/pekan-it/workshop" element={<Workshop />} />
-          <Route path="/pekan-it/webinar" element={<Webinar />} />
+          <Route path="/" element={<App />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/workshop" element={<Workshop />} />
+          <Route path="/webinar" element={<Webinar />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

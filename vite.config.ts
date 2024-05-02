@@ -23,7 +23,7 @@ export default ({ mode }) => {
   // import.meta.env.VITE_NAME available here with: process.env.VITE_NAME
   // import.meta.env.VITE_PORT available here with: process.env.VITE_PORT
   return defineConfig({
-    base: "/pekan-it/",
+    base: "/",
 
     plugins: [
       react(),
@@ -35,15 +35,12 @@ export default ({ mode }) => {
         DEBUG: "false",
 
         // Required: will fail if the API_KEY environment variable is not provided.
-        API_KEY: "AIzaSyDRFNXS8FFeCA93M-PcVxm8pB8Y51CdsTo",
+        API_KEY: "AIzaSyBFp8nc0MNVLwcVB0JIuWwo3MnndALE1Eo",
 
         // Optional: will not fail if the APP_VERSION environment variable is missing.
       }),
     ],
     mode: "production",
     // plugins: [react()],
-    server: {
-      port: 9315,
-    },
   });
 };
