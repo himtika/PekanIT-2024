@@ -1,6 +1,6 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { BiInfoCircle } from "react-icons/Bi";
+import { BiInfoCircle } from "react-icons/bi";
 import { useLocation } from "react-router-dom";
 import { auth } from "../../firebase";
 import PendaftaranDataService from "../../service/pendaftaran.service";

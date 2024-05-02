@@ -1,7 +1,7 @@
 import { IconContext } from "react-icons";
-import { BsFillCalendarCheckFill } from "react-icons/Bs";
-import { FaInstagram } from "react-icons/Fa";
-import { GoLocation, GoNote } from "react-icons/Go";
+import { BsFillCalendarCheckFill } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { GoLocation, GoNote } from "react-icons/go";
 import bgWebinar from "../assets/bgWebinar3.jpg";
 import WS from "../assets/WS.jpg";
 const Workshop = () => {
@@ -129,9 +129,9 @@ const Workshop = () => {
 export default Workshop;
 
 // import { IconContext } from "react-icons";
-// import { BsFillCalendarCheckFill } from "react-icons/Bs";
-// import { FaInstagram, FaWhatsapp } from "react-icons/Fa";
-// import { GoLocation, GoNote } from "react-icons/Go";
+// import { BsFillCalendarCheckFill } from "react-icons/bs";
+// import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+// import { GoLocation, GoNote } from "react-icons/go";
 // import bgWebinar from "../assets/bgWebinar3.jpg";
 // import WS from "../assets/WS.jpg";
 // const Workshop = () => {

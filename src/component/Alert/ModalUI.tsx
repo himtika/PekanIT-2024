@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { IconContext } from "react-icons";
-import { FiExternalLink } from "react-icons/Fi";
+import { FiExternalLink } from "react-icons/fi";
 
 // eslint-disable-next-line react/prop-types
 export default function Modal({ destroy }) {

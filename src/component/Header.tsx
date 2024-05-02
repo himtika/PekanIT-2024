@@ -2,7 +2,7 @@ import { Popover, Tab, Transition } from "@headlessui/react";
 import { onAuthStateChanged } from "firebase/auth";
 import { Fragment, useState } from "react";
 import { IconContext } from "react-icons";
-import { BsCardChecklist } from "react-icons/Bs";
+import { BsCardChecklist } from "react-icons/bs";
 import { Link as LinkUrl, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import pekanItIcon from "../assets/pekanIT.png";

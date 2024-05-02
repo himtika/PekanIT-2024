@@ -8,8 +8,8 @@ import Login from "../Login/Login";
 import { Link as LinkUrl } from "react-router-dom";
 import { auth, db, storage } from "../../firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import { FaHome } from "react-icons/Fa";
-import { FiRefreshCcw } from "react-icons/Fi";
+import { FaHome } from "react-icons/fa";
+import { FiRefreshCcw } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
 function classNames(...classes: any) {

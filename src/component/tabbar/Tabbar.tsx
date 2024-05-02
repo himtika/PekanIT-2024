@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { Link } from "react-scroll";
-import { AiOutlineHome } from "react-icons/Ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { IconContext } from "react-icons";
-import { GoBook } from "react-icons/Go";
-import { FaQuestion } from "react-icons/Fa";
+import { GoBook } from "react-icons/go";
+import { FaQuestion } from "react-icons/fa";
 import { VscCalendar } from "react-icons/vsc";
-import { MdOutlineEmojiEvents } from "react-icons/Md";
+import { MdOutlineEmojiEvents } from "react-icons/md";
 import FAQ from "../FAQ";
 
 function classNames(...classes: string[]) {

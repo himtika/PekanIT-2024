@@ -7,9 +7,9 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
-import { FcGoogle } from "react-icons/Fc";
+import { FcGoogle } from "react-icons/fc";
 import GoogleButton from "react-google-button";
-import { RiLogoutCircleLine } from "react-icons/Ri";
+import { RiLogoutCircleLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
 
 const Login = () => {

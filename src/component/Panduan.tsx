@@ -1,4 +1,4 @@
-import { AiOutlineExclamationCircle } from "react-icons/Ai";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
 import BPC from "../assets/BPC.jpg";
 import CS from "../assets/CS.jpg";
 import DM from "../assets/DM.jpg";
