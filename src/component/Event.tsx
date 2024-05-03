@@ -1,17 +1,15 @@
 import doIt from "../assets/doit.png";
 import dies from "../assets/dies.png";
-import { Link as LinkUrl } from "react-router-dom";
 import { Link } from "react-scroll";
-import { useNavigate } from "react-router-dom";
+
 export default function Event() {
-  const navigate = useNavigate();
   return (
     <>
       <div
         id="event"
-        className="grid px-3 content-center justify-center text-white pb-12"
+        className="grid px-3 content-center justify-center text-white pb-12 mt-40 md:mt-3 "
       >
-        <div className="text-center sm:mt-5">
+        <div className="text-center mt-5">
           <p className="text-3xl font-bold mt-3">3 Events</p>
 
           <p className="text-lg text-cyan-400">

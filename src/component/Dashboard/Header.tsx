@@ -86,7 +86,7 @@ export default function Header() {
             <div className="-my-2 -mr-2 md:hidden">
               <Popover.Button className="inline-flex items-center justify-center p-2 mr-3">
                 <span className="sr-only">Open menu</span>
-                <LinkUrl to="/pekan-it/">
+                <LinkUrl to="/">
                   <IconContext.Provider
                     value={{
                       size: "22px",
@@ -121,7 +121,7 @@ export default function Header() {
                   } flex transition-all  space-x-1 rounded-xl  p-1`}
                 >
                   {user != 0 ? (
-                    <LinkUrl to="/pekan-it/">
+                    <LinkUrl to="/">
                       <Tab
                         className={({ selected }) =>
                           classNames(

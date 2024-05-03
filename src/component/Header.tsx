@@ -60,7 +60,7 @@ export default function Header() {
           id="header"
           className="max-w-7xl mx-auto py-2 sm:px-6 backdrop-blur-sm"
         >
-          <div className="flex justify-between animate-fade-in-2s  items-center py-2 md:justify-start md:space-x-10">
+          <div className="flex justify-between animate-fade-in-2s  items-center py-2 lg:justify-start md:space-x-10">
             <div className="flex  justify-start lg:w-0 lg:flex-1">
               <div className=" whitespace-nowrap inline-flex items-center justify-center py-2  text-base font-medium text-white ">
                 <img
@@ -73,7 +73,7 @@ export default function Header() {
                 </span>
               </div>
             </div>
-            <div className="-my-2 -mr-2 md:hidden">
+            <div className="-my-2   lg:hidden">
               {user == 1 ? (
                 <Popover.Button className="inline-flex items-center justify-center p-2 mr-3">
                   <span className="sr-only">Open menu</span>
@@ -100,13 +100,13 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="hidden md:flex  items-center  justify-end md:flex-1 lg:w-0">
+            <div className="hidden lg:flex  items-center  justify-end md:flex-1 lg:w-0">
               {/* selectedIndex={selectedIndex}  */}
               <Tab.Group defaultIndex={0}>
                 <Tab.List
                   className={`${
                     colorChange ? "bg-blue-900/20" : "bg-tranparent"
-                  } flex transition-all  space-x-1 rounded-xl  p-1`}
+                  } flex items-center transition-all  space-x-1 rounded-xl  p-1`}
                 >
                   {categories.map((category) => (
                     <Link
@@ -133,7 +133,7 @@ export default function Header() {
                     </Link>
                   ))}
                   {user != 0 ? (
-                    <LinkUrl to="/pekan-it/dashboard" state={email}>
+                    <LinkUrl to="/dashboard" state={email}>
                       <Tab
                         className={({ selected }) =>
                           classNames(
@@ -151,6 +151,29 @@ export default function Header() {
                   ) : (
                     ""
                   )}
+                  {user != 0 ? (
+                    <LinkUrl
+                      to="https://forms.gle/LMMzFdKxWGjRwAo57"
+                      state={email}
+                      target="_blank"
+                    >
+                      <Tab
+                        className={({ selected }) =>
+                          classNames(
+                            "w-full rounded-lg py-2.5 text-sm p-5 font-medium leading-5 text-white transition-all duration-300",
+                            "",
+                            selected
+                              ? " ring-0 outline-none"
+                              : "text-white  hover:bg-white/[0.12] hover:text-white ",
+                          )
+                        }
+                      >
+                        Daftar Kepanitiaan
+                      </Tab>
+                    </LinkUrl>
+                  ) : (
+                    ""
+                  )}
                   <Tab
                     className={`w-full rounded-lg py-2.5 text-sm p-5 font-medium leading-5 text-white transition-all duration-300`}
                   >
@@ -163,78 +186,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-        {/* login alert */}
-        <Transition
-          as={Fragment}
-          enter="duration-200 ease-out"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="duration-100 ease-in"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          <Popover.Panel
-            focus
-            className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
-          >
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-              <div className="px-5 pt-5 pb-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                      alt="Workflow"
-                    />
-                  </div>
-                  <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                      <span className="sr-only">Close menu</span>
-                      <BsCardChecklist className="h-6 w-6" aria-hidden="true" />
-                    </Popover.Button>
-                  </div>
-                </div>
-                <div className="mt-6">
-                  <nav className="grid gap-y-8"></nav>
-                </div>
-              </div>
-              <div className="space-y-6 py-6 px-5">
-                <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  <a
-                    href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Pricing
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    Docs
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-                  >
-                    Sign up
-                  </a>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?{" "}
-                    <a
-                      href="#"
-                      className="text-indigo-600 hover:text-indigo-500"
-                    >
-                      Sign in
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Popover.Panel>
-        </Transition>
       </Popover>
     </>
   );
