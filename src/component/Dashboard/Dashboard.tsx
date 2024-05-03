@@ -22,13 +22,13 @@ export default function Dashboard() {
       setEmail(user.email);
     } else {
       setUser(0);
-      window.location.href = "/pekan-it/";
+      window.location.href = "/";
     }
   });
 
   useEffect(() => {
     if (location.state == null) {
-      window.location.href = "/pekan-it/";
+      window.location.href = "/";
     }
     getPendaftaran();
   }, []);
