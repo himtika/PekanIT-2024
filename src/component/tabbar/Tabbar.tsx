@@ -10,12 +10,24 @@ import { FaQuestion } from "react-icons/fa";
 import { VscCalendar } from "react-icons/vsc";
 import { MdOutlineEmojiEvents } from "react-icons/md";
 import FAQ from "../FAQ";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../firebase";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Tabbar() {
+  const [user, setUser] = useState(0);
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      setUser(1);
+    } else {
+      setUser(0);
+    }
+  });
+
   const [categories] = useState([
     {
       value: "Beranda",
@@ -42,7 +54,9 @@ export default function Tabbar() {
     <div className="w-full px-3 items-stretch z-30 lg:hidden fixed bottom-0">
       <Tab.Group defaultIndex={0}>
         <Tab.List
-          className={`grid grid-cols-6 rounded-xl  p-3 bg-[#30908e] bg-opacity-20 backdrop-blur-xl`}
+          className={`grid ${
+            user !== 0 ? "grid-cols-6" : "grid-cols-5"
+          } rounded-xl  p-3 bg-[#30908e] bg-opacity-20 backdrop-blur-xl`}
         >
           {categories.map((category, idx) => {
             // must be a capitalized name in order for react to treat it as a component
@@ -81,21 +95,23 @@ export default function Tabbar() {
               </Link>
             );
           })}
-          <Tab
-            className={`w-full rounded-lg py-3 text-sm flex justify-center items-center font-medium leading-5 text-blue-700 `}
-          >
-            <IconContext.Provider
-              value={{
-                color: "#5CCFEE",
-                size: "30px",
-                className: "",
-              }}
+          {user != 0 && (
+            <Tab
+              className={`w-full rounded-lg py-3 text-sm flex justify-center items-center font-medium leading-5 text-blue-700 `}
             >
-              <LinkRoute to="https://forms.gle/LMMzFdKxWGjRwAo57">
-                <IoIosPeople />
-              </LinkRoute>
-            </IconContext.Provider>
-          </Tab>
+              <IconContext.Provider
+                value={{
+                  color: "#5CCFEE",
+                  size: "30px",
+                  className: "",
+                }}
+              >
+                <LinkRoute to="https://forms.gle/LMMzFdKxWGjRwAo57">
+                  <IoIosPeople />
+                </LinkRoute>
+              </IconContext.Provider>
+            </Tab>
+          )}
           <Tab
             className={`w-full rounded-lg py-3 text-sm flex justify-center items-center font-medium leading-5 text-blue-700 `}
           >
