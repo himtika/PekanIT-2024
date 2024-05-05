@@ -14,10 +14,11 @@ export default function Hero() {
       >
         <div className="xl:m-auto lg:m-auto md:m-auto sm:my-[4vh]">
           <div className="lg:text-5xl animate-fade-in-2.5s sm:text-4xl md:text-4xl whitespace-normal sm:px-5 text-center font-bold">
-            <p className="">
-              Growing Competitive Spirit and Student Creativity
+            <p className="">Sparkling Innovators</p>
+            <hr className="w-[80%] mx-auto my-3 lg:hidden"/>
+            <p className="mt-1 lg:mt-5 ">
+              Developing Students Creativity and Ambitious Goals
             </p>
-            <p className="">in the Field of Science and Technology</p>
           </div>
 
           <div className="xl:text-center sm:mt-7 animate-fade-in-2.5s sm:text-justify break-words max-w-2xl text-center px-5 sm:text-sm md:text-lg mx-auto mt-5">

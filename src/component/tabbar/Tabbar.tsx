@@ -18,15 +18,15 @@ function classNames(...classes: string[]) {
 }
 
 export default function Tabbar() {
-  const [user, setUser] = useState(0);
+  const [user, setUser] = useState(1);
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setUser(1);
-    } else {
-      setUser(0);
-    }
-  });
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     setUser(1);
+  //   } else {
+  //     setUser(0);
+  //   }
+  // });
 
   const [categories] = useState([
     {
