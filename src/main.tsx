@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./component/Dashboard/Dashboard";
 import Workshop from "./workshop/Workshop";
 import Webinar from "./webinar/Webinar";
+import Tree from "./tree/tree";
 
 export const rootElement = document.getElementById("root") as HTMLElement;
 ReactDOM.createRoot(rootElement).render(
@@ -14,10 +15,11 @@ ReactDOM.createRoot(rootElement).render(
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/workshop" element={<Workshop />} />
-          <Route path="/webinar" element={<Webinar />} />
+          <Route path="/pekan-it/" element={<App />} />
+          <Route path="/pekan-it/dashboard" element={<Dashboard />} />
+          <Route path="/pekan-it/workshop" element={<Workshop />} />
+          <Route path="/pekan-it/webinar" element={<Webinar />} />
+          <Route path="/pekan-it/tree" element={<Tree />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

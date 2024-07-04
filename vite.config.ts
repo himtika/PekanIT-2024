@@ -41,6 +41,7 @@ export default ({ mode }) => {
       }),
     ],
     mode: "production",
+    build: {chunkSizeWarningLimit: 1600}
     // plugins: [react()],
   });
 };

@@ -36,14 +36,14 @@ export default function Header() {
     { value: "Jadwal", label: "Jadwal", goTo: "jadwal" },
   ]);
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setUser(1);
-      setEmail(user.email);
-    } else {
-      setUser(0);
-    }
-  });
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     setUser(1);
+  //     setEmail(user.email);
+  //   } else {
+  //     setUser(0);
+  //   }
+  // });
 
   // const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -63,11 +63,11 @@ export default function Header() {
           <div className="flex justify-between animate-fade-in-2s  items-center py-2 lg:justify-start md:space-x-10">
             <div className="flex  justify-start lg:w-0 lg:flex-1">
               <div className=" whitespace-nowrap inline-flex items-center justify-center py-2  text-base font-medium text-white ">
-                <img
+                {/* <img
                   className="h-10 md:h-12 w-auto sm:h-6 mb-1 ml-3 md:ml-0"
                   src={pekanItIcon}
                   alt="logo pekan it"
-                />
+                /> */}
                 <span id="nama" className="ml-3 text-xl font-bold">
                   Pekan IT
                 </span>
@@ -96,7 +96,7 @@ export default function Header() {
               <div className="inline-flex items-center justify-center p-2">
                 <span className="sr-only">Open menu</span>
 
-                <Login />
+                {/* <Login /> */}
               </div>
             </div>
 
@@ -151,36 +151,34 @@ export default function Header() {
                   ) : (
                     ""
                   )}
-                  {user != 0 ? (
-                    <LinkUrl
-                      to="https://forms.gle/LMMzFdKxWGjRwAo57"
-                      state={email}
-                      target="_blank"
+
+                  <LinkUrl
+                    to="https://forms.gle/LMMzFdKxWGjRwAo57"
+                    state={email}
+                    target="_blank"
+                  >
+                    <Tab
+                      className={({ selected }) =>
+                        classNames(
+                          "w-full rounded-lg py-2.5 text-sm p-5 font-medium leading-5 text-white transition-all duration-300",
+                          "",
+                          selected
+                            ? " ring-0 outline-none"
+                            : "text-white  hover:bg-white/[0.12] hover:text-white ",
+                        )
+                      }
                     >
-                      <Tab
-                        className={({ selected }) =>
-                          classNames(
-                            "w-full rounded-lg py-2.5 text-sm p-5 font-medium leading-5 text-white transition-all duration-300",
-                            "",
-                            selected
-                              ? " ring-0 outline-none"
-                              : "text-white  hover:bg-white/[0.12] hover:text-white ",
-                          )
-                        }
-                      >
-                        Daftar Kepanitiaan
-                      </Tab>
-                    </LinkUrl>
-                  ) : (
-                    ""
-                  )}
+                      Daftar Kepanitiaan
+                    </Tab>
+                  </LinkUrl>
+
                   <Tab
                     className={`w-full rounded-lg py-2.5 text-sm p-5 font-medium leading-5 text-white transition-all duration-300`}
                   >
                     <FAQ obj={"FAQ"} />
                     {/* <LinkUrl to="/pekan-it/hero">FAQ</LinkUrl> */}
                   </Tab>
-                  <Login />
+                  {/* <Login /> */}
                 </Tab.List>
               </Tab.Group>
             </div>
