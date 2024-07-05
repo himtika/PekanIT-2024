@@ -36,14 +36,14 @@ export default function Header() {
     { value: "Jadwal", label: "Jadwal", goTo: "jadwal" },
   ]);
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setUser(1);
-      setEmail(user.email);
-    } else {
-      setUser(0);
-    }
-  });
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     setUser(1);
+  //     setEmail(user.email);
+  //   } else {
+  //     setUser(0);
+  //   }
+  // });
 
   // const [scrollPosition, setScrollPosition] = useState(0);
 

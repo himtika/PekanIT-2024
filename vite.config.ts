@@ -41,16 +41,7 @@ export default ({ mode }) => {
       }),
     ],
     mode: "production",
-    build: {
-      rollupOptions: {
-        external: ["react", "react-router", "react-router-dom", "react-redux"],
-        output: {
-          globals: {
-            react: "React",
-          },
-        },
-      },
-    },
+    build: {chunkSizeWarningLimit: 1600}
     // plugins: [react()],
   });
 };
