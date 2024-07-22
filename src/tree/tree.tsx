@@ -1,3 +1,5 @@
+// import '/index.css';
+
 function Tree() {
   return (
     <div className="bg-[url('/backgroundImage.jpg')] bg-cover bg-center bg-no-repeat text-white min-h-screen flex flex-col items-center justify-center font-medium">
