@@ -11,49 +11,49 @@ import "react-vertical-timeline-component/style.min.css";
 
 const dateEvent = [
   {
-    tahun: "2023",
-    bulan: "Agustus",
-    tanggal: "29",
-    hari: "Selasa",
-    jam: "00:01 am to 23:59",
-    note: "Pendaftaran UI/UX, Software Development, dan Competitive Programming",
-  },
-  {
-    tahun: "2023",
-    bulan: "September",
-    tanggal: "22",
-    hari: "Jumat",
-    jam: "0:01 am to 23:59 pm",
-    note: "Batas akhir pengumpulan karya UI/UX & Software Development",
-  },
-  {
-    tahun: "2023",
-    bulan: "September",
-    tanggal: "22",
+    tahun: "2024",
+    bulan: "Juli",
+    tanggal: "21",
     hari: "Minggu",
+    jam: "00:01 am to 23:59",
+    note: "Pendaftaran Perlombaan, UI/UX Design, dan Software Development, dan Competitive Programming",
+  },
+  {
+    tahun: "2024",
+    bulan: "Agustus",
+    tanggal: "24",
+    hari: "Sabtu",
+    jam: "0:01 am to 23:59 pm",
+    note: "Batas akhir pendaftaran perlombaan dan pengumpulan karya Software Development & UI/UX Design",
+  },
+  {
+    tahun: "2024",
+    bulan: "Agustus",
+    tanggal: "28",
+    hari: "Kamis",
     jam: "8:00 am to 5:00 pm",
     note: "Pengumuman Finalis & Technical Meeting",
   },
   {
-    tahun: "2023",
-    bulan: "September",
-    tanggal: "28",
-    hari: "Kamis",
-    jam: "8:00 am to 5:00 pm",
-    note: "Pelaksanaan Seminar Pekan IT",
-  },
-  {
-    tahun: "2023",
-    bulan: "September",
-    tanggal: "29",
-    hari: "Jumat",
+    tahun: "2024",
+    bulan: "Agustus",
+    tanggal: "31",
+    hari: "Sabtu",
     jam: "8:00 am to 5:00 pm",
     note: "Presentasi Finalis UI/UX & Software Development, Pelaksanaan Lomba Competitive Programming",
   },
   {
-    tahun: "2023",
+    tahun: "2024",
     bulan: "September",
-    tanggal: "30",
+    tanggal: "14",
+    hari: "Sabtu",
+    jam: "8:00 am to 5:00 pm",
+    note: "Pelaksanaan Seminar Pekan IT",
+  },
+  {
+    tahun: "2024",
+    bulan: "September",
+    tanggal: "21",
     hari: "Sabtu",
     jam: "8:00 am to 5:00 pm",
     note: "Pelaksanaan Workshop Pekan IT dan Pengumuman pemenang IT Competition",
@@ -67,13 +67,13 @@ const customTheme = createTheme(themes.default, {
   },
 
   date: {
-    backgroundColor: "#2f8484",
+    backgroundColor: "#3b82f6",
   },
   marker: {
-    borderColor: "#2f8484",
+    borderColor: "#3b82f6",
   },
   timelineTrack: {
-    backgroundColor: "#2f8484",
+    backgroundColor: "#3b82f6",
   },
 });
 
@@ -85,7 +85,7 @@ export default function Jadwal() {
         id="jadwal"
         className="sm:pb-14 md:pb-0 grid content-center  md:justify-center"
       >
-        <p className="text-center overflow-hidden text-3xl text-white my-5">
+        <p className="text-center overflow-hidden text-3xl text-white my-5 ">
           Timeline Pekan IT
         </p>
         <Timeline theme={customTheme} className="z-10">
@@ -99,7 +99,7 @@ export default function Jadwal() {
                     ", " +
                     event.tanggal +
                     " " +
-                    event.bulan +
+                    event.bulan + " " +
                     event.tahun
                   }
                   text={event.note}

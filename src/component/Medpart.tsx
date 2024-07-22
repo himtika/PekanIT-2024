@@ -13,7 +13,7 @@ const MediaPartner = () => {
           <div className="md:col-span-4 sm:col-span-2">
             <p className="text-3xl text-black mb-6 text-center font-medium">
               Thanks to{" "}
-              <span className="font-bold text-red-700">
+              <span className="font-bold text-blue-700">
                 our Sponsor & Media partners
               </span>
             </p>

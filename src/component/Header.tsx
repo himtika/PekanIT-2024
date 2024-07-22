@@ -52,7 +52,7 @@ export default function Header() {
       <Popover
         className={`${
           colorChange
-            ? "bg-[#30908e] bg-opacity-20 overflow-hidden backdrop-blur-lg"
+            ? "bg-[#02042c] bg-opacity-20 overflow-hidden backdrop-blur-lg"
             : "bg-transparent"
         } sticky top-0 z-30 `}
       >
@@ -63,11 +63,11 @@ export default function Header() {
           <div className="flex justify-between animate-fade-in-2s  items-center py-2 lg:justify-start md:space-x-10">
             <div className="flex  justify-start lg:w-0 lg:flex-1">
               <div className=" whitespace-nowrap inline-flex items-center justify-center py-2  text-base font-medium text-white ">
-                {/* <img
+                <img
                   className="h-10 md:h-12 w-auto sm:h-6 mb-1 ml-3 md:ml-0"
                   src={pekanItIcon}
                   alt="logo pekan it"
-                /> */}
+                />
                 <span id="nama" className="ml-3 text-xl font-bold">
                   Pekan IT
                 </span>

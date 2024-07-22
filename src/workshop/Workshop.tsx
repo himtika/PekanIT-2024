@@ -50,7 +50,7 @@ const Workshop = () => {
                     <GoLocation className="" />
                   </IconContext.Provider>
                   <span className="ml-2 x    md:text-green-700 ">
-                    Gedung Aula Universitas Singaperbangsa Karawang
+                    Gedung Syekh Quro, Universitas Singaperbangsa Karawang
                   </span>
                 </p>
                 <p className="pt-2 text-black font-bold text-base flex items-center justify-center lg:justify-start">
@@ -70,7 +70,7 @@ const Workshop = () => {
 
                 <p className="pt-4 text-sm  x    md:text-green-700 ">
                   Workshop pada acara Pekan IT kali ini membawakan tema
-                  <span className="italic">"Machine Learning"</span>
+                  <span className="italic">"Mobile Development"</span>
                 </p>
               </div>
 

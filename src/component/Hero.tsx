@@ -15,11 +15,11 @@ export default function Hero() {
       >
         <div className="xl:m-auto lg:m-auto md:m-auto sm:my-[4vh]">
           <div className="lg:text-5xl animate-fade-in-2.5s sm:text-4xl text-xl whitespace-normal sm:px-5 text-center font-bold ">
-            <p className="">Open Recruitment </p>
+            <p className="">Pekan IT 2024</p>
             {/* <hr className="w-[80%] mx-auto my-3 lg:hidden bg-white" /> */}
-            <p className="mt-1 lg:mt-5 text-xl  lg:text-5xl sm:text-4xl">
-              Kepanitiaan Diesnatalis dan Pekan-IT 2024
-            </p>
+            {/* <p className="mt-1 lg:mt-5 text-xl  lg:text-5xl sm:text-4xl">
+              Pekan IT 2024
+            </p> */}
           </div>
 
           <div className="xl:text-center sm:mt-7 animate-fade-in-2.5s sm:text-justify break-words max-w-2xl text-center px-5 sm:text-sm md:text-lg mx-auto mt-5 ">
@@ -30,13 +30,13 @@ export default function Hero() {
               atau perlombaan bidang Informatika.
             </p>
 
-            <hr className="mt-3 border-white" />
+            {/* <hr className="mt-3 border-white" /> */}
 
-            <p className="mt-5">
+            {/* <p className="mt-5">
               Diesnatalis merupakan rangkaian acara dalam memperingati
               berdirinya organisasi HIMTIKA, dan bertujuan untuk mempererat
               hubungan tali silaturahmi antar Pengurus dan Anggota HIMTIKA.
-            </p>
+            </p> */}
           </div>
           <div className="xl:text-center animate-fade-in-2.5s sm:mb-5 sm:text-justify break-words max-w-2xl lg:text-center md:text-center px-5 sm:text-sm md:text-lg mx-auto mt-3 flex justify-center">
             <br />
@@ -44,16 +44,17 @@ export default function Hero() {
               to="https://forms.gle/LMMzFdKxWGjRwAo57"
               className="lg:hidden"
             >
-              <button className=" bg-cyan-500  transition-all py-4 px-10 rounded-lg md:w-auto sm:w-full text-white font-semibold">
+              <button className="border-2 border-white transition-all py-4 px-10 rounded-lg md:w-auto sm:w-full text-white font-semibold">
                 Daftar Sekarang!
               </button>
             </Link>
             <Link
-              to="https://forms.gle/LMMzFdKxWGjRwAo57"
+              // to="https://forms.gle/LMMzFdKxWGjRwAo57"
+              to="https://example.com/link1"
               target="_blank"
               className="lg:block hidden"
             >
-              <button className=" bg-cyan-500 hover:bg-cyan-300 py-4 px-10 rounded-lg md:w-auto sm:w-full text-white font-semibold">
+              <button className=" border-2 border-white transition-all hover:bg-cyan-300 py-4 px-10 rounded-lg md:w-auto sm:w-full text-white font-semibold">
                 Daftar Sekarang!
               </button>
             </Link>

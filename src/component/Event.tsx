@@ -24,7 +24,7 @@ export default function Event() {
               // navigate("/pekan-it/webinar");
               return alert("Comingsoon");
             }}
-            className="grid h-max-content cursor-pointer md:mt-0 sm:mt-8 px-3 border-2 border-cyan-400 border-dotted py-3 bg-[#509291] bg-opacity-30  rounded-lg"
+            className="grid h-max-content cursor-pointer md:mt-0 sm:mt-8 px-3 border-2 border-blue-700 border-dotted py-3 bg-[#219eeb] bg-opacity-30  rounded-lg"
           >
             <div className="mx-auto">
               <img src={dies} />
@@ -37,14 +37,14 @@ export default function Event() {
               <span className="">
                 membawakan tema{" "}
                 <span className="italic">
-                  "The Important Role of Technology in Changing The World"
+                  "Sparking Innovators: Developing students creativity and ambitious goals."
                 </span>
               </span>
             </div>
           </div>
           {/* </LinkUrl> */}
           <Link to="panduan" duration={800} smooth={true} offset={-85}>
-            <div className="grid h-max-content cursor-pointer  md:mt-0 sm:mt-8 px-3 border-2 border-yellow-400 border-dotted py-3 bg-[#509291] bg-opacity-30  rounded-lg">
+            <div className="grid h-max-content cursor-pointer  md:mt-0 sm:mt-8 px-3 border-2 border-blue-700 border-dotted py-3 bg-[#219eeb] bg-opacity-30  rounded-lg">
               <div className="mx-auto">
                 <img src={doIt} />
               </div>
@@ -66,17 +66,17 @@ export default function Event() {
               // navigate("/pekan-it/workshop");
               return alert("Comingsoon");
             }}
-            className="grid h-max-content cursor-pointer  md:mt-0 sm:mt-8 px-3 border-2 border-cyan-400 border-dotted py-3 bg-[#509291] bg-opacity-30  rounded-lg"
+            className="grid h-max-content cursor-pointer  md:mt-0 sm:mt-8 px-3 border-2 border-blue-700 border-dotted py-3 bg-[#219eeb] bg-opacity-30  rounded-lg"
           >
             <div className="mx-auto">
               <img src={dies} />
             </div>
             <div className="mx-auto text-xl font-bold mt-3">Workshop</div>
             <div className="text-center mt-2">
-              <span>Workshop pada acara Pekan IT ini </span>
+              <span>Workshop pada acara Pekan IT tahun ini </span>
               <br />
 
-              <span className="italic">bertema tentang "Machine Learning"</span>
+              <span className="italic">bertema tentang "Mobile Innovation: Shaping the Future of Connectivity".</span>
             </div>
           </div>
           {/* </LinkUrl> */}

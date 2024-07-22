@@ -52,7 +52,7 @@ const Webinar = () => {
                     <GoLocation className="" />
                   </IconContext.Provider>
                   <span className="ml-2 text-white md:text-green-700 ">
-                    Gedung Aula Universitas Singaperbangsa Karawang
+                    Gedung Aula Syekh Quro, Universitas Singaperbangsa Karawang
                   </span>
                 </p>
                 <p className="pt-2 text-black font-bold text-base flex items-center justify-center lg:justify-start">

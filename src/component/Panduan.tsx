@@ -276,7 +276,7 @@ export default function Panduan() {
                 </div>
                 <div className=" pt-[9.5rem]">
                   <div className="px-96"></div>
-                  <div className="px-5 py-4 bg-[#198d98] backdrop-blur-sm bg-opacity-60 rounded-b-lg rounded-t-xl">
+                  <div className="px-5 py-4 bg-[#219eeb] backdrop-blur-sm bg-opacity-60 rounded-b-lg rounded-t-xl">
                     <h5 className="text-xl font-semibold tracking-tight text-white dark:text-white">
                       {perlombaan.nama}
                     </h5>

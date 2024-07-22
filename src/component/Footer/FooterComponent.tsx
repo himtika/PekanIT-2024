@@ -1,6 +1,6 @@
 export function FooterComponent() {
   return (
-    <footer className="bg-[#30908e]/30 rounded-lg shadow text-white backdrop-blur-lg	mt-5">
+    <footer className="bg-[#219EEB]/30 rounded-lg shadow text-white backdrop-blur-lg	mt-5">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
